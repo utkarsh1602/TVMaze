@@ -1,0 +1,98 @@
+{% load static %}
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+    <link href='{% static "https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700,900|Oswald:400,700" rel="stylesheet" %}'>
+    
+    <link rel="stylesheet" href='{% static "fonts/icomoon/style.css" %}'>
+
+    <link rel="stylesheet" href='{% static "css/bootstrap.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/magnific-popup.css" %}'>
+    <link rel="stylesheet" href='{% static "css/jquery-ui.css" %}'>
+    <link rel="stylesheet" href='{% static "css/owl.carousel.min.css" %}'>
+    <link rel="stylesheet" href='{% static "css/owl.theme.default.min.css" %}'>
+
+    <link rel="stylesheet" href='{% static "css/bootstrap-datepicker.css" %}'>
+
+    <link rel="stylesheet" href='{% static "fonts/flaticon/font/flaticon.css" %}'>
+
+    <link rel="stylesheet" href='{% static "css/aos.css" %}'>
+    <link rel="stylesheet" href='{% static "css/fancybox.min.css" %}'>
+
+    <link rel="stylesheet" href='{% static "css/style.css" %}'>
+
+</style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <span class="icon icon-home"></span>
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- <section class="row align-items-stretch photos" id="section-photos"> -->
+        <div class="col-12">
+        <div class="row align-items-stretch">
+{% for item in data %}
+	<div class="col-6 col-md-6 col-lg-4" data-aos="fade-up">
+          <a href={{item}} class="d-block photo-item" data-fancybox="gallery">
+            <img src={{item}} alt="Image" class="img-fluid">
+            <div class="photo-text-more">
+              <!-- <span class="icon icon-search"></span> -->
+            </div>
+          </a>
+        </div>
+        <br>
+{% endfor %}	
+</div>
+</div>
+<!-- </section> -->
+</body>
+<script src='{% static "js/jquery-3.3.1.min.js" %}'></script>
+  <script src='{% static "js/jquery-migrate-3.0.1.min.js" %}'></script>
+  <script src='{% static "js/jquery.easing.1.3.js" %}'></script>
+  <script src='{% static "js/jquery-ui.js" %}'></script>
+  <script src='{% static "js/popper.min.js" %}'></script>
+  <script src='{% static "js/bootstrap.min.js" %}'></script>
+  <script src='{% static "js/owl.carousel.min.js" %}'></script>
+  <script src='{% static "js/jquery.stellar.min.js" %}'></script>
+  <script src='{% static "js/jquery.countdown.min.js" %}'></script>
+  <script src='{% static "js/jquery.magnific-popup.min.js" %}'></script>
+  <script src='{% static "js/bootstrap-datepicker.min.js" %}'></script>
+  <script src='{% static "js/aos.js" %}'></script>
+  
+
+  <script src='{% static "js/jquery.fancybox.min.js" %}'></script>
+
+  <script src='{% static "js/main.js" %}'></script>
